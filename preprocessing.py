@@ -1,7 +1,7 @@
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
-file_path = r"C:\Users\Krishnansh Verma\OneDrive\Desktop\Python and ML\Projects\Capstone Dataset\11_1_raw.mat"
+file_path = r"C:\Users\Krishnansh Verma\OneDrive\Desktop\Python and ML\Projects\CAPSTONE\Capstone Dataset\11_1_raw.mat"
 with h5py.File(file_path, 'r') as f:
     eeg_data = np.array(f['X']).T  
     sampling_frequency = int(f['fs'][0][0])  
